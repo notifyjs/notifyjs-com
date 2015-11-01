@@ -1504,7 +1504,7 @@ pre.prettyprint.running {
 /* line 159 : /Users/jpillora/Code/JavaScript/notifyjs-com/src/styles/app.styl */
 .notifyjs-gswg-base .content .cover {
   float: left;
-  background: url("http://gswg.io/img/cover2.jpg");
+  background: url("https://gswg.io/img/cover2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
