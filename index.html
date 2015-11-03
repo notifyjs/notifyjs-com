@@ -39,9 +39,11 @@
       </div>
       <div class="eight columns">
         <h3>Download</h3>
-        <p>Download Notify.js including the pre-made <code>bootstrap</code> notification style:<br><a href="//rawgit.com/notifyjs/notifyjs/gh-pages/dist/notify.js" data-download data-filename="notify.js">
-            <button>Download notify.js</button></a><a href="//rawgit.com/notifyjs/notifyjs/gh-pages/dist/notify.js" data-minify-download data-filename="notify.min.js">
-            <button>Download notify.min.js</button></a></p>
+        <p>Download Notify.js including the pre-made <code>bootstrap</code> notification style:<br>
+          <p><a href="//rawgit.com/notifyjs/notifyjs/gh-pages/dist/notify.js" data-download data-filename="notify.js">
+              <button>Download notify.js</button></a><a href="//rawgit.com/notifyjs/notifyjs/gh-pages/dist/notify.js" data-minify-download data-filename="notify.min.js">
+              <button>Download notify.min.js</button></a></p>
+        </p>
       </div>
       <div class="sixteen columns">
         <h3>Basic Usage</h3>
@@ -85,16 +87,17 @@
         <h3>Positioning</h3>
         <p>
           Element notifications and Global notifications can
-          be vertically repositioned to: <code>"top"</code>, <code>"middle" </code>or <code>"bottom" </code>and horozontally repositioned to: <code>"left"</code>, <code>"center" </code>or <code>"right" </code>. Note, there are two default positions and these are set individually with: <code>$.notify.defaults({ globalPosition: "...",  elementPosition: "..." });</code>
+          be vertically repositioned to: <code>"top"</code>, <code>"middle" </code>or <code>"bottom" </code>and horozontally repositioned to: <code>"left"</code>, <code>"center" </code>or <code>"right"</code>. Note, there is no <code>position</code> <b>default</b> setting. Since there are two types positions,
+          these are set individually as <code>globalPosition</code> and <code>elementPosition</code>.
         </p>
         <p>
           <pre class="prettyprint runnable">$(".pos-demo").notify(
-  "I'm left of the box", 
-  { position:"left" }
+  "I'm to the right of this box", 
+  { position:"right" }
 );</pre>
         </p>
         <p class="center">We can position the notification around this <span class="box pos-demo">box</span></p>
-        <p style="padding-top: 30px">Use this positioning tool to see all possible position combinations </p>
+        <p style="padding-top: 30px">Use this positioning tool to see all possible <code>position</code> combinations </p>
         <div style="padding: 30px;">
           <label for="pos-elem" class="inline">Element</label>
           <input type="radio" id="pos-elem" value="elem" name="pos-type" checked="checked">
@@ -397,6 +400,8 @@ $.notify({
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="//rawgit.com/notifyjs/notifyjs/gh-pages/dist/notify.js"></script>
     <script src="//jpillora.com/compilejs/dist/compile.js"></script>
+    <script src="js/vendor/jquery.knob.js"></script>
+    <script src="js/vendor/prettify.js"></script>
     <script src="js/app.js"></script>
     <script>
       //async fonts

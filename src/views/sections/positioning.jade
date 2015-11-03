@@ -18,21 +18,21 @@
     | , 
     code "center" 
     | or 
-    code "right" 
-    | . Note, there are two default positions and these are set individually with: 
-    code $.notify.defaults({ globalPosition: "...",  elementPosition: "..." });
+    code "right"
+    | . Note, there is no <code>position</code> <b>default</b> setting. Since there are two types positions,
+    | these are set individually as <code>globalPosition</code> and <code>elementPosition</code>.
 
   p: pre.prettyprint.runnable
     | $(".pos-demo").notify(
-    |   "I'm left of the box", 
-    |   { position:"left" }
+    |   "I'm to the right of this box", 
+    |   { position:"right" }
     | );
 
   p.center
     | We can position the notification around this 
     span.box.pos-demo box
 
-  p(style='padding-top: 30px') Use this positioning tool to see all possible position combinations 
+  p(style='padding-top: 30px') Use this positioning tool to see all possible <code>position</code> combinations 
 
   div(style="padding: 30px;")
     label.inline(for="pos-elem") Element
