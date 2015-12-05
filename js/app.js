@@ -101,9 +101,9 @@ function initPosChooser() {
       position: currPos
     };
     if (currType === 'elem') {
-      return $(".pos-chooser-demo").notify("" + currPos, opts);
+      return $(".pos-chooser-demo").notify('position: "' + currPos + '"', opts);
     } else {
-      return $.notify("" + currPos, opts);
+      return $.notify('position: "' + currPos + '"', opts);
     }
   };
   //init knob and cycle though position

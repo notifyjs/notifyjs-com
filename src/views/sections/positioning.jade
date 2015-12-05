@@ -6,8 +6,8 @@
   h3 Positioning
 
   p
-    | Element notifications and Global notifications can
-    | be vertically repositioned to: 
+    | The <code>position</code> string option is used to describe both vertical and horizontal alignment. 
+    | Element notifications and Global notifications can be vertically repositioned to: 
     code "top"
     | , 
     code "middle" 
@@ -19,8 +19,10 @@
     code "center" 
     | or 
     code "right"
-    | . Note, there is no <code>position</code> <b>default</b> setting. Since there are two types positions,
-    | these are set individually as <code>globalPosition</code> and <code>elementPosition</code>.
+    | . If we don't provide a <code>position</code> option the default alignments are 
+    | defined in the default settings: <code>globalPosition</code> and <code>elementPosition</code>.
+    | When only one alignment is provided, the vertical alignment is <code>middle</code> 
+    | and horizontal alignment is <code>centre</code>.
 
   p: pre.prettyprint.runnable
     | $(".pos-demo").notify(
@@ -32,8 +34,9 @@
     | We can position the notification around this 
     span.box.pos-demo box
 
-  p(style='padding-top: 30px') Use this positioning tool to see all possible <code>position</code> combinations 
-
+  p(style='padding-top: 30px')
+    | Use this positioning tool to see all possible <code>position</code> combinations.
+    
   div(style="padding: 30px;")
     label.inline(for="pos-elem") Element
     input(type="radio", id="pos-elem", value="elem", name="pos-type", checked="checked")
